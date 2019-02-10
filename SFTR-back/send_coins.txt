@@ -1,0 +1,1 @@
+web3.eth.sendTransaction({from: main_wallet_addr, to: "0x318f2a2600CD5d41EFE051E127B2F02EE46b0cae", value: web3.utils.toWei("10", "ether") })

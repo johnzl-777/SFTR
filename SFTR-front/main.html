@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html></html>
+<body>
+  <h1>
+    Secure File Transfer-eR (SFTR)
+  </h1>
+  <div style="padding-top:20px;"></div>
+  <hr />
+  <h2>
+    Generate Keys	
+  </h2>
+  <p>
+    <b>Must be done on first use of SFTR!</b>
+  </p>
+  <p>
+    Public (Broadcasted to SFTR database)
+  </p>
+  <p id="pubkey_out"></p>
+  <p>
+    Private (KEEP SECURE)
+  </p>
+  <p id="privkey_out"></p>
+  <button id="btn_gen_key">GENERATE KEYS</button>
+  <hr />
+  <h2>
+    Transmit Key
+  </h2>
+  <p>
+    Publish your public key so other people can use SFTR
+  </p>
+  <button id="btn_pub_key">PUBLISH KEYS</button>
+  <hr />
+  <h2>
+    Send File
+  </h2>
+  <p>
+    Send a file to someone
+  </p>
+  <label for="addr_in">Recepient Ethereum Address</label><input id="addr_in" /><br /><label for="private_in">Private Key</label><input id="private_in_upload" /><br /><input type="file" id="file_in" /><br /><button id="btn_submit">SUBMIT</button>
+  <hr />
+  <h2>
+    Receive File
+  </h2>
+  <input id="private_in_download">Private Key</input><br /><button id="btn_download">DOWNLOAD</button>
+  <script src="bundle.js"></script>
+</body>
